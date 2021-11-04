@@ -11,13 +11,13 @@
 
 ## Computación 2021
 
-**Asignatura**: <!-- REEMPLAZA este comentario por el nombre de la asignatura -->
+**Asignatura**: <!-- Administracion y gestion de Base de Datos -->
 
-**Nombre TP**: <!-- REEMPLAZA este comentario por el nombre del TP -->
+**Nombre TP**: <!-- Software Factory -->
 
-**Apellido y nombre Alumno**: <!-- REEMPLAZA este comentario por tu apellido y nombre -->
+**Apellido y nombre Alumno**: <!-- Cruz Arturo -->
 
-**Curso**: <!-- REEMPLAZA este comentario por tu curso -->
+**Curso**: <!-- 5to 7ma -->
 
 # Título del Proyecto
 

@@ -11,13 +11,13 @@
 
 ## Computación 2021
 
-**Asignatura**: <!-- REEMPLAZA este comentario por el nombre de la asignatura -->
+**Asignatura**: Administracion y Gestion de Base de Datos
 
-**Nombre TP**: <!-- REEMPLAZA este comentario por el nombre del TP -->
+**Nombre TP**: Software Factory
 
-**Apellido y nombre Alumno**: <!-- REEMPLAZA este comentario por tu apellido y nombre -->
+**Apellido y nombre Alumno**: Cruz Arturo
 
-**Curso**: <!-- REEMPLAZA este comentario por tu curso -->
+**Curso**: 5to 7ma
 
 # Título del Proyecto
 
@@ -26,9 +26,9 @@ _Acá va un párrafo que describa lo que es el proyecto._
 ## Comenzando 🚀
 
 Clonar el repositorio github, desde Github Desktop o ejecutar en la terminal o CMD:
-<!-- cambia el link de abajo al de tu repositorio y BORRA ESTE COMENTARIO -->
+
 ```
-git clone https://github.com/ET12DE1Computacion/simpleTemplateCSharp
+https://github.com/ArturoCruz606/5to7ma-software_factory/tree/dev
 ```
 
 ### Pre-requisitos 📋
@@ -43,6 +43,8 @@ _Agrega notas adicionales sobre que cosas se debe instalar, configurar y como ha
 
 _Menciona las herramientas y versiones que utilizaste para crear tu proyecto_
 
+* [Visual Studio 2019](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&rel=16) -  Entorno de desarrollo integrado
+
 * [Visual Studio Code](https://code.visualstudio.com/#alt-downloads) - Editor de código.
 
 ## Versionado 📌
@@ -53,8 +55,8 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Max Power** - *Desarrollo* - [Maxpower](https://github.com/maxpower)
-* **Cosme Fulanito** - *Documentación* - [Cosmefulanito](#Cosmefulanito)
+* **Arturo Cruz** - *Todo* - [ArturCruz606](https://github.com/ArturoCruz606)
+* **Luis Duran** - *El profe* - [Luis Duran](https://github.com/luchoxx87)
 
 ## Licencia 📄
 

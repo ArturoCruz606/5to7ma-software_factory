@@ -11,13 +11,13 @@
 
 ## Computación 2021
 
-**Asignatura**: -- Administracion y Gestion de Base de Datos --
+**Asignatura**:  Administracion y Gestion de Base de Datos 
 
-**Nombre TP**: -- Software Factory --
+**Nombre TP**:  Software Factory 
 
-**Apellido y nombre Alumno**: -- Cruz Arturo --
+**Apellido y nombre Alumno**:  Cruz Arturo 
 
-**Curso**: -- 5to 7ma --
+**Curso**:  5to 7ma 
 
 # Título del Proyecto
 

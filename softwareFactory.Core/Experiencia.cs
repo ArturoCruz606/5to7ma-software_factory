@@ -4,6 +4,6 @@ namespace softwareFactory.Core
     {
         public Tecnologia Tecnologia { get; set; }
         public Empleado Empleado { get; set; }
-        public int Calificacion { get; set; }
+        public byte Calificacion { get; set; }
     }
 }

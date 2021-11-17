@@ -1,3 +1,16 @@
+USE SoftwareFactory;
+DROP PROCEDURE IF EXISTS altaTecnologia;
+DROP PROCEDURE IF EXISTS altaRequerimiento;
+DROP PROCEDURE IF EXISTS altaTarea;
+DROP PROCEDURE IF EXISTS altaEmpleado; 
+DROP PROCEDURE IF EXISTS altaProyecto;
+DROP PROCEDURE IF EXISTS altaCliente;
+DROP PROCEDURE IF EXISTS asignarExperiencia;
+DROP PROCEDURE IF EXISTS finalizarTarea;
+DROP FUNCTION IF EXISTS complejidadPromedio;
+DROP FUNCTION IF EXISTS sueldoMensual;
+DROP FUNCTION IF EXISTS costoProyecto;
+
 DELIMITER $$
 CREATE PROCEDURE altaTecnologia (unIdTecnologia TINYINT, unTecnologia VARCHAR(45), unCostoBase DECIMAL(10.2))
 BEGIN
@@ -14,7 +27,7 @@ BEGIN
 END $$
 
 DELIMITER $$
-CREATE PROCEDURE altaTarea (unIdRequerimiento INT, unCuil INT, unCuil DATE, unFin DATE)
+CREATE PROCEDURE altaTarea (unIdRequerimiento INT, unCuil INT, unInicio DATE, unFin DATE)
 BEGIN
 		INSERT INTO tarea (idRequerimiento, cuil, inicio, fin)
 						VALUES    (unIdRequerimiento, unCuil, unInicio, unFin);

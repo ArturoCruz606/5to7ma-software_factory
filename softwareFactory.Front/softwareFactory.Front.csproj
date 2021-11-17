@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\softwareFactory.AdoMySQL\softwareFactory.AdoMySQL.csproj" />
     <ProjectReference Include="..\softwareFactory.Core\softwareFactory.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

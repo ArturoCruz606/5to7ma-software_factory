@@ -9,5 +9,9 @@ namespace softwareFactory.Core
         public string Apellido { get; set; }
         public DateTime Contratacion { get; set; }
         public List<Experiencia> Experiencias { get; set; }
+        public Empleado()
+        {
+            Experiencias = new List<Experiencia>();
+        }
     }
 }

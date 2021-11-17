@@ -118,6 +118,7 @@ namespace softwareFactory.Front
             this.btnIngresar.TabIndex = 8;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // frmAltaCliente
             // 
@@ -136,6 +137,7 @@ namespace softwareFactory.Front
             this.Name = "frmAltaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
+            this.Load += new System.EventHandler(this.frmAltaCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

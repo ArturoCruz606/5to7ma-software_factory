@@ -33,37 +33,3 @@ END $$
 
 
 DELIMITER $$
-
--- Procedimiento para dar de alta la tabla tarea
-
-DROP PROCEDURE IF EXISTS altaTarea $$
-CREATE PROCEDURE altaTarea (unIdRequerimiento INT, unCuil INT, unInicio DATE, unFin DATE)
-BEGIN
-		INSERT INTO tarea (idRequerimiento, cuil, inicio, fin)
-						VALUES    (unIdRequerimiento, unCuil, unInicio, unFin);
-END $$
-
-DELIMITER $$
-
--- Procedimiento para dar de alta la tabla empleado
-
-DROP PROCEDURE IF EXISTS altaEmpleado $$
-CREATE PROCEDURE altaEmpleado (unCuil INT, unNombre VARCHAR(50), unApellido VARCHAR(50), unContratacion DATE)
-BEGIN
-		INSERT INTO empleado (cuil, nombre, apellido, contratacion)
-						VALUES    (unCuil, unNombre, unApellido, unContratacion);
-END $$
-
-
--- Insert en tarea para probar trigger befInsTarea
-CALL altaTarea(1, 1000, '2021-10-06', '2021-12-01');
-
-
--- Insert en empleado para probar el trigger aftInsEmpleado
-CALL altaEmpleado(1, 'Arturo', 'Cruz', '2021-01-02');
-
-
--- Consulta para ver si se asigno calificacion 0 a todas las tecnologias
-SELECT *
-FROM experiencia
-WHERE cuil = 1;

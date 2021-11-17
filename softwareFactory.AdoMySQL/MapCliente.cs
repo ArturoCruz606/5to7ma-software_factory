@@ -25,9 +25,11 @@ namespace softwareFactory.AdoMySQL
 
             BP.CrearParametro("unCuit")
               .SetTipo(MySql.Data.MySqlClient.MySqlDbType.Int32)
+              .SetValor(cliente.Cuit)
               .AgregarParametro();
             BP.CrearParametro("unRazonSocial")
                 .SetTipoVarchar(50)
+                .SetValor(cliente.RazonSocial)
                 .AgregarParametro();
         }
         public List<Cliente> ObtenerClientes() => ColeccionDesdeTabla();

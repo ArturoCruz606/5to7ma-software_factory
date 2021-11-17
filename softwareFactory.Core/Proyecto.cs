@@ -11,5 +11,9 @@ namespace softwareFactory.Core
         public DateTime Inicio { get; set; }
         public DateTime Fin { get; set; }
         public List<Requerimiento> Requerimientos { get; set; }
+        public Proyecto()
+        {
+            Requerimientos = new List<Requerimiento>();
+        }
     }
 }

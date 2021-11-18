@@ -36,12 +36,15 @@ namespace softwareFactory.Front
             int cuit = int.Parse(cuitEntero);
             NuevoCliente = new Cliente(cuit, txtRazonSocial.Text);
             AdoSoftware.AltaCliente(NuevoCliente);
-            MessageBox.Show("Bien hecho, ahora Luis te da un caramelo acido");
+            MessageBox.Show("Cliente agregado");
         }
 
-        private void frmAltaCliente_Load(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
+            frmClienteMenu volver = new frmClienteMenu();
 
+            volver.Show();
+            Close();
         }
     }
 }

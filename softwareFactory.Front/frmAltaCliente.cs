@@ -9,33 +9,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using softwareFactory.Core;
 using softwareFactory.AdoMySQL;
-using et12.edu.ar.AGBD.Ado;
-
 namespace softwareFactory.Front
 {
 
     public partial class frmAltaCliente : Form
     {
-        public Cliente NuevoCliente { get; set;  }
-        public AdoSoftware AdoSoftware { get; set; }
-
-        public frmAltaCliente()
+        public Cliente NuevoCliente { get; set; }
+        public IAdo Ado { get; set; }
+        public frmAltaCliente(IAdo ado)
         {
             InitializeComponent();
-            var adoAGBD = FactoryAdoAGBD.GetAdoMySQL("appSettings.json", "test");
-            AdoSoftware = new AdoSoftware(adoAGBD);
+            Ado = ado;
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             AltaCliente();
+            txtDni.Text = string.Empty;
+            txtIdentificador.Text = string.Empty;
+            txtVerificador.Text = string.Empty;
+            txtRazonSocial.Text = string.Empty;
         }
         private void AltaCliente()
         {
             string cuitEntero = txtIdentificador.Text + txtDni.Text + txtVerificador.Text;
             int cuit = int.Parse(cuitEntero);
             NuevoCliente = new Cliente(cuit, txtRazonSocial.Text);
-            AdoSoftware.AltaCliente(NuevoCliente);
+            Ado.AltaCliente(NuevoCliente);
             MessageBox.Show("Cliente agregado");
         }
 

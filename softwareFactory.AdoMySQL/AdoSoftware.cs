@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace softwareFactory.AdoMySQL
 {
-    public class AdoSoftware
+    public class AdoSoftware: IAdo
     {
         public AdoAGBD Ado { get; set; }
         public MapCliente MapCliente { get; set; }

@@ -17,10 +17,10 @@ namespace softwareFactory.Front
     {
         //Agregar using para esto
         List<Cliente> Clientes { get; set; }
-        public AdoSoftware Ado { get; set; }
+        public IAdo Ado { get; set; }
 
         //Recibir ado por paramentro
-        public frmClientes(AdoSoftware ado)
+        public frmClientes(IAdo ado)
         {
             InitializeComponent();
             Ado = ado;
@@ -28,15 +28,14 @@ namespace softwareFactory.Front
 
         private void frmClientes_Load(object sender, EventArgs e)
         {
-
+            CompletarGrid();
         }
 
         public void CompletarGrid()
         {
             Clientes = Ado.ObtenerClientes();
             //Asignar la lista de cliente en base a lo que devuelva el ado
-            dgvClientes.DataSource = Clientes;
-            
+            dgvClientes.DataSource = Clientes;            
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
